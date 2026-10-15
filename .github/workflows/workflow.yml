@@ -12,8 +12,8 @@ on:
     runs-on: ubuntu-latest
     steps:
       name: checkout repo
-      uses: actions?checkout@4
+      uses: actions/checkout@v4
 
       name: Echo Some Message
-      run: 
-      Echo "Witaj z tej strony pierwszy wokrflow"
+      run:  echo "Witaj z tej strony pierwszy wokrflow"
+
