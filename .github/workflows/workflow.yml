@@ -3,17 +3,17 @@ name: Example action
 on:
   pull_request:
 
-  permissions:
-    contents: read
+permissions:
+  contents: read
   
-  jobs:
-    example-job:
+jobs:
+  example-job:
     name: example job
     runs-on: ubuntu-latest
     steps:
-      name: checkout repo
-      uses: actions/checkout@v4
-
-      name: Echo Some Message
-      run:  echo "Witaj z tej strony pierwszy wokrflow"
+      - name: checkout repo
+        uses: actions/checkout@v4
+    
+      - name: Echo Some Message
+        run:  echo "Witaj z tej strony pierwszy wokrflow"
 
