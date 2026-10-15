@@ -1,0 +1,20 @@
+name: Example action
+
+on:
+  pull_request:
+
+  permissions:
+    contents: read
+  
+  jobs:
+    example-job:
+    name: example job
+    runs-on: ubuntu-latest
+    steps:
+
+      name: checkout repo
+      uses: actions?checkout@4
+
+      - Echo Some message
+      run: |
+      Echo "Witaj z tej strony pierwszy wokrflow"
